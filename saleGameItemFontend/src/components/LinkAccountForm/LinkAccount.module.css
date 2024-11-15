@@ -1,0 +1,196 @@
+/* Căn chỉnh toàn bộ component để tạo cảm giác hài hòa hơn */
+
+.container {
+    width: 90%;
+    /* Chiếm 90% chiều rộng màn hình */
+    max-width: 500px;
+    /* Giới hạn chiều rộng tối đa */
+    padding: 30px;
+    background-color: rgba(219, 154, 48, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Định dạng form với các khoảng cách giữa các thành phần */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Nhóm input có căn chỉnh label và input theo chiều ngang */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Tạo kiểu input với hiệu ứng border và shadow */
+.inputGroup input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.input-field {
+    background-color: #756868;
+}
+
+input::placeholder {
+    color: #f9f9f9;
+    opacity: 0.8;
+}
+
+/* Định dạng ảnh captcha để dễ nhìn hơn */
+.captcha-img {
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Tạo kiểu cho nút bấm và hiệu ứng hover */
+.submitButton {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.submitButton:active {
+    transform: translateY(1px);
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.captcha {
+    flex: 1;
+    height: 40px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding-left: 12px;
+}
+
+.captcha-img {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.captcha-btn {
+    width: 40px;
+    height: 40px;
+    background: url('../../assets/reload.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.captcha-btn:hover {
+    transform: rotate(360deg);
+}
+
+.logoGarena {
+    height: 170px;
+    width: 170px;
+    background-image: url("https://th.bing.com/th/id/R.7fd70f5bde43f2a9be63a210b4a88ff5?rik=oN4XcrtCNGLr8g&pid=ImgRaw&r=0");
+    background-size: 100% 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp4545909.jpg");
+    background-size: cover;
+}
+
+/* Media query cho responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        /* Chiếm 95% chiều rộng trên màn hình nhỏ hơn */
+        padding: 20px;
+    }
+
+    .captcha-img {
+        width: 100px;
+        /* Giảm kích thước ảnh captcha trên màn hình nhỏ hơn */
+    }
+
+    .logoGarena {
+        height: 120px;
+        /* Giảm kích thước logo trên màn hình nhỏ hơn */
+        width: 120px;
+    }
+
+    .inputGroup input {
+        padding: 10px;
+        /* Giảm padding cho input */
+    }
+
+    .submitButton {
+        padding: 10px;
+        /* Giảm padding cho nút bấm */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        /* Giảm padding cho màn hình nhỏ hơn */
+    }
+
+    .captcha-container {
+        flex-direction: column;
+        /* Chuyển đổi chiều dọc cho captcha trên màn hình nhỏ */
+        align-items: flex-start;
+        /* Căn lề cho các phần tử */
+    }
+
+    .captcha-img {
+        width: 100%;
+        /* Chiếm 100% chiều rộng cho ảnh captcha */
+        margin-top: 10px;
+        /* Thêm khoảng cách trên */
+    }
+
+    .captcha-btn {
+        margin-top: 10px;
+        /* Thêm khoảng cách cho nút bấm */
+    }
+}

@@ -1,0 +1,6 @@
+.chat_Wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 200, 174);
+}

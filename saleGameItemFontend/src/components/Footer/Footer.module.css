@@ -1,0 +1,40 @@
+.footer-container {
+    width: 100%;
+    height: 30%;
+    box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.5),
+        0 0.9px 1.7px rgba(0, 0, 0, 0.1), 0 1.8px 3.5px rgba(0, 0, 0, 0.1),
+        0 3.7px 7.3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    opacity: 0.75;
+    position: absolute;
+    bottom: 0;
+}
+
+.decoration-box1 {
+    width: 350px;
+    height: 500px;
+    top: -170px;
+    right: 30px;
+    background: url('../../assets/jinx.webp');
+    transform:  scaleX(-1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 4;
+}
+
+.decoration-box2 {
+    width: 300px;
+    height: 300px;
+    top: -138px;
+    right: 60px;
+    transform:  scaleX(-1);
+    transform: rotate(45deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    border: 5px solid #ADFF2F;
+    opacity: 0.7;
+}
+

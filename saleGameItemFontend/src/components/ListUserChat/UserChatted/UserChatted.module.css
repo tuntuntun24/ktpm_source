@@ -1,0 +1,105 @@
+.userChattedContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.userChattedContainer:hover {
+    background-color: #e8f0fe;
+    /* Màu nền khi hover */
+    box-shadow: 5px 5px 5px red
+        /* Hiệu ứng shadow mạnh hơn khi hover */
+}
+
+/* Avatar của người dùng */
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #007bff;
+    /* Viền xung quanh avatar để làm nổi bật */
+    margin-right: 16px;
+}
+
+/* Thông tin người dùng */
+.userInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Tên người dùng */
+.nickName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.nickName:hover {
+    color: #007bff;
+    /* Đổi màu khi hover vào tên người dùng */
+}
+
+/* ID người dùng */
+.userId {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Một chút margin cho các thành phần bên ngoài */
+.listUserChat_container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Button quay lại Dashboard */
+.btn_ReturnDashBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_ReturnDashBoard:hover {
+    background-color: #0056b3;
+    /* Hiệu ứng hover cho button */
+}
+
+/* Tiêu đề "Danh sách người từng nhắn" */
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* List container */
+.userList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

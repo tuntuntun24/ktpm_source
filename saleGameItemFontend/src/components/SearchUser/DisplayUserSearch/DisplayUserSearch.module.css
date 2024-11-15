@@ -1,0 +1,61 @@
+.display_container {
+    display: flex;
+    padding: 15px;
+    border: 1px solid #d1cfcf;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #e3dede;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+    /* Hiệu ứng chuyển động nhẹ */
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.display_container:hover {
+    transform: scale(1.05);
+    /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng đổ */
+    border-color: #4CAF50;
+    opacity: .7;
+    /* Đổi màu viền khi hover */
+}
+
+.avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    /* Hiệu ứng khi hover avatar */
+    cursor: pointer;
+
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    /* Phóng to avatar khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng đổ khi hover */
+}
+
+.nickName {
+    font-size: 20px;
+    color: #4CAF50;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Hiệu ứng thay đổi màu chữ */
+}
+
+.nickName:hover {
+    color: #333;
+    /* Đổi màu chữ khi hover */
+}

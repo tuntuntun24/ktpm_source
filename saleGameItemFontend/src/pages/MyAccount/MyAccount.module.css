@@ -1,0 +1,205 @@
+.account-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/lolbackground.jpg');
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav {
+    width: 20%;
+    height: 85%;
+    position: absolute;
+    z-index: 1;
+    top: 117px;
+    transition: 1s;
+}
+
+.workplace {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    right: 0px;
+    overflow: hidden;
+    transition: right 2s ease-in-out;
+}
+
+.status-container {
+    height: 150%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.229);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(16deg);
+    position: absolute;
+    right: -500px;
+    bottom: -170px;
+    border: 5px solid #ADFF2F;
+    overflow: hidden;
+
+}
+
+.account-status {
+    width: 60%;
+    height: 60%;
+    margin-top: 25%;
+    margin-left: 6%;
+    transform: rotate(-16deg);
+    display: flex;
+    justify-content: space-between;    
+}
+
+.input {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    transition: 1s ease-in-out;
+    gap: 20px;
+    position: relative;
+    opacity: 0;
+}
+
+.nickname-container {
+    width: 40%;
+    height: 32%;
+    background-color: #211E1F;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    border-right: 5px solid #B73961;
+}
+
+.other-container {
+    width: 60%;
+    height: 52%;
+    background-color: #211E1F;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    border-right: 5px solid #B73961;
+}
+
+.nickname-container>p,
+.other-container>p {
+    color: white;
+    font-size: 20px;
+    font-family: "teko";
+    margin-left: 10px;
+    text-align: center;
+}
+
+.nickname-container>p>a,
+.other-container>p>a {
+    color: rgb(249, 83, 83);
+    padding-left: 5px;
+    font-family: "Roboto"
+}
+
+.nickname-container>input,
+.other-container>input {
+    height: 50px;
+    background-color: #333131;
+    border: none;
+}
+
+.nickname-container>input:focus,
+.other-container>input:focus {
+    outline: none;
+}
+
+.nickname-container>button {
+    margin-top: 10px;
+    margin-left: 95px;
+}
+
+.btn-container {
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.save,
+.link,
+.update-nickname {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.save:hover,
+.link:hover,
+.update-nickname:hover {
+    border-radius: 0;
+    scale: 1.05;
+    opacity: .8;
+}
+
+.save {
+    background-color: #E8554E;
+}
+
+.link {
+    background-color: #d9138a;
+}
+
+.update-nickname {
+    background-color: #5c3c92;
+}
+
+.account-infor {
+    width: 358.08px;
+    height: 127.93px;
+    position: absolute;
+    top: 310px;
+    left: 558px;
+    background-color: #211E1F;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 5px solid #B73961;
+}
+
+.account-infor>p {
+    color: white;
+    font-family: 'teko';
+    font-size: 25px;
+    text-align: center;
+}
+
+.account-infor>button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fcca46;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.account-infor>button:hover {
+    border-radius: 0;
+}

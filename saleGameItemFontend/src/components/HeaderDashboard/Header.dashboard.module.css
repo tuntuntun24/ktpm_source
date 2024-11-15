@@ -1,0 +1,186 @@
+.nav-horizional {
+    width: 100%;
+    height: 15%;
+    box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.5),
+        0 0.9px 1.7px rgba(0, 0, 0, 0.1), 0 1.8px 3.5px rgba(0, 0, 0, 0.1),
+        0 3.7px 7.3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.menu {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background-color: rgb(129, 129, 129);
+    border-radius: 10px;
+}
+
+.menu-name {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.nav-horizional {
+    font-size: 25px;
+    color: white;
+}
+
+.main-title {
+    margin-bottom: 7px;
+    margin-left: 20px;
+    font-family: "Teko", serif;
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+}
+
+.decoration {
+    width: 2px;
+    height: 60%;
+    background-color: #ADFF2F;
+    margin-left: 30px;
+}
+
+
+.button-50 {
+    appearance: button;
+    background-color: #ADFF2F;
+    background-image: none;
+    border: 1px solid #ADFF2F;
+    border-radius: 0px;
+    box-shadow: #fff 4px 4px 0 0, #fff 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: absolute;
+    right: 30px;
+}
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+    background: #EF476F;
+    border: 1px solid #EF476F;
+}
+
+.button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}
+
+.web-name {
+    font-weight: bold;
+    font-family: "Tiny5", sans-serif;
+    position: absolute;
+    right: 600px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.last-letter {
+    position: absolute;
+    font-size: 80px;
+    top: -25px;
+    right: -60px;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+.last-letter:hover {
+    text-decoration: none;
+    color: #ADFF2F;
+}
+
+.infor {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avartar {
+    transition: .5s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.avartar:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+#nickname-container {
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    left: 320px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.nickname {
+    font-family: 'teko';
+    position: absolute;
+    left: 18%;
+    top: 35px;
+    color: #000;
+    background-color: #ADFF2F;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+#avatar {
+    width: 15%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}

@@ -1,0 +1,33 @@
+/* OtherMessage.module.css */
+
+.otherMessage_container {
+    display: flex;
+    align-items: flex-end;
+    /* Đưa tin nhắn của người khác về bên trái */
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.otherMessage_container {
+    height: 50px;
+}
+
+.avatar_message {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.messageContent {
+    max-width: 60%;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}

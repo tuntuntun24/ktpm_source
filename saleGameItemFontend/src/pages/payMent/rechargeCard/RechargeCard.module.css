@@ -1,0 +1,132 @@
+/* Container to center the card */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.alphacoders.com/982/982681.jpg");
+    background-size: cover;
+}
+
+.nav_wrapper {
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    transition: 1s;
+    position: fixed;
+
+}
+
+/* Card styling */
+.card {
+    width: 600px;
+    height: 500px;
+    /* Tăng kích thước */
+    padding: 30px;
+    /* Tăng khoảng cách */
+    /* background: linear-gradient(145deg, #e6e6e6, #ffffff); */
+    background-color: rgba(60, 196, 75, 0.4);
+
+    border-radius: 16px;
+    /* Tăng độ bo góc */
+    box-shadow: 12px 12px 24px #d1d1d1, -12px -12px 24px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nickname {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.username,
+.balance {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Content styling */
+.content {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.amountOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.amount {
+    width: 100px;
+    /* Tăng kích thước */
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 10px;
+    /* Tăng độ bo góc */
+    box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    /* Tăng kích thước chữ */
+}
+
+.amount:hover {
+    background: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+.selected {
+    background: #4a90e2;
+    color: #ffffff;
+    box-shadow: 8px 8px 16px rgba(74, 144, 226, 0.4), -8px -8px 16px rgba(74, 144, 226, 0.4);
+}
+
+/* Confirm button styling */
+.confirmButton {
+    width: 100%;
+    padding: 15px;
+    /* Tăng khoảng cách */
+    font-size: 1.1em;
+    /* Tăng kích thước chữ */
+    color: #ffffff;
+    background: #4a90e2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 8px 8px 16px rgba(74, 144, 226, 0.4), -8px -8px 16px rgba(74, 144, 226, 0.4);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.confirmButton:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.confirmButton:hover:not(:disabled) {
+    background: #357ABD;
+    transform: translateY(-3px);
+}

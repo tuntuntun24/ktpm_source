@@ -1,0 +1,93 @@
+.messengerContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sendButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.chatContainer {
+    display: flex;
+    align-items: flex-start;
+    /* Căn chỉnh các phần tử theo chiều dọc */
+    width: 100%;
+    /* Đảm bảo container chiếm hết chiều rộng */
+}
+
+.message {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.message.sender {
+    background-color: #007bff;
+    /* Màu nền cho người gửi */
+    color: white;
+    margin-left: auto;
+    /* Đẩy tin nhắn của người gửi sang phải */
+}
+
+.avartar {
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

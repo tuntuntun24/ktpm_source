@@ -1,0 +1,23 @@
+/* OwnMessage.module.css */
+
+.ownMessage_container {
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: flex-end;
+    /* Đưa tin nhắn của người dùng về bên phải */
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.messageContent {
+    max-width: 60%;
+    background-color: #007bff;
+    /* Màu nền xanh cho tin nhắn của người dùng */
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
